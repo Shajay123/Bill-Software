@@ -302,9 +302,9 @@ def generate_pdf():
         table_y -= cell_height  # Move to the next row
 
     # Calculate the positions for the text
-    text_x = 374  # X-coordinate for the text
-    text_y = table_y - 30
-    col_width = 79
+    text_x = 373  # X-coordinate for the text
+    text_y = table_y - 5
+    col_width = 78
 
     # Define labels and corresponding values
     labels = ["TOTAL", "CGST", "SGST", "IGST", "G.TOTAL"]
@@ -336,7 +336,7 @@ def generate_pdf():
 
     # Total in text
     c.setFont("Helvetica", 10)
-    c.drawString(50, 150, f"G.Total: {total_in_text_igst} rupees.")  # Grand Total with IGST
+    c.drawString(50, 150, f"G.Total: {total_in_text_igst} Rupees.")  # Grand Total with IGST
 
     #Above signature
     c.setFont("Helvetica", 10)
