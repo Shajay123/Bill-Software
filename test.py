@@ -335,7 +335,7 @@ def generate_pdf():
                          f"{formatted_values[i]}")  # Draw value within the border
 
     # Total in text
-    c.setFont("Helvetica", 10)
+    c.setFont("Helvetica", 8)
     c.drawString(50, 150, f"G.Total: {total_in_text_igst} Rupees.")  # Grand Total with IGST
 
     #Above signature
